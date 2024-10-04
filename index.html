@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ты мой котеночек, Аяна</title>
+<style>
+body {
+font-family: 'Comic Sans MS', sans-serif;
+background-color: #ffe4e1;
+text-align: center;
+color: #ff69b4;
+}
+h1 {
+margin-top: 50px;
+font-size: 3em;
+color: #ff1493;
+}
+#heart {
+margin-top: 20px;
+width: 150px;
+height: 150px;
+background-color: #ff1493;
+position: relative;
+display: inline-block;
+transform: rotate(-45deg);
+cursor: pointer;
+}
+#heart:before, #heart:after {
+content: "";
+width: 150px;
+height: 150px;
+background-color: #ff1493;
+border-radius: 50%;
+position: absolute;
+}
+#heart:before {
+top: -75px;
+left: 0;
+}
+#heart:after {
+left: 75px;
+top: 0;
+}
+#message {
+display: none;
+font-size: 1.5em;
+color: #ff69b4;
+margin-top: 20px;
+}
+.barbie-style {
+font-size: 1.2em;
+color: #ff69b4;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Ты мой котёночек</h1>
+
+<div id="heart" onclick="showMessage()"></div>
+
+<p id="message" class="barbie-style">
+Ащкым я тебя очень сильно люблю! маленькая моя пусть у тебя будет вё хорошо! я горжусь тобой очень сильно!!!!
+</p>
+
+<script>
+function showMessage() {
+document.getElementById('message').style.display = 'block';
+}
+</script>
+</body>
+</html>
